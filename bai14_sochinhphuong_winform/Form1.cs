@@ -35,5 +35,13 @@ namespace bai14_sochinhphuong_winform
             int sqrt = (int)Math.Sqrt(so);  
             return sqrt  * sqrt == so;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            for (int i = 1; i * i <= 1000; i++)
+            {
+                lsbKq.Items.Add(i * i);
+            }
+        }
     }
 }

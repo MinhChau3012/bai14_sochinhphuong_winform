@@ -33,6 +33,7 @@
             this.txtSo = new System.Windows.Forms.TextBox();
             this.lblKq = new System.Windows.Forms.Label();
             this.btnTinh = new System.Windows.Forms.Button();
+            this.lsbKq = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -79,11 +80,21 @@
             this.btnTinh.UseVisualStyleBackColor = true;
             this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 
+            // lsbKq
+            // 
+            this.lsbKq.FormattingEnabled = true;
+            this.lsbKq.ItemHeight = 20;
+            this.lsbKq.Location = new System.Drawing.Point(351, 65);
+            this.lsbKq.Name = "lsbKq";
+            this.lsbKq.Size = new System.Drawing.Size(231, 284);
+            this.lsbKq.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 421);
+            this.Controls.Add(this.lsbKq);
             this.Controls.Add(this.btnTinh);
             this.Controls.Add(this.lblKq);
             this.Controls.Add(this.txtSo);
@@ -93,6 +104,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,6 +117,7 @@
         private System.Windows.Forms.TextBox txtSo;
         private System.Windows.Forms.Label lblKq;
         private System.Windows.Forms.Button btnTinh;
+        private System.Windows.Forms.ListBox lsbKq;
     }
 }
 
